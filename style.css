@@ -15,7 +15,7 @@
 body {
     background-color: var(--bg);
     color: var(--ink);
-    font-family: sans-serif;
+    font-family: 'DM Sans' ,sans-serif;
     line-height: 1.6;
 }
 
@@ -60,6 +60,12 @@ nav {
     border-radius: 999px;
     text-decoration: none;
     font-weight: 500;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#sobre-mi a:hover {
+    background-color: var(--accent);
+    transform: translateY(-2px);
 }
 
 section {
@@ -94,6 +100,13 @@ section p {
     font-size: 0.9rem;
     font-weight: 500;
     color: var(--ink);
+    transition: background-color 0.2s, color 0.2s, boder-color 0.2s;
+}
+
+.skill:hover {
+    background-color: var(--accent);
+    color: white;
+    border-color: var(--accent);
 }
 
 .proyecto-card {
@@ -101,6 +114,12 @@ section p {
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 2rem;
+    transform: transform 0.2s, box-shadow 0.2s ;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 .proyecto-card h3 {
@@ -213,4 +232,29 @@ nav {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Inter', sans-serif;
+}
+
+.skill-html:hover {
+    background-color: #e34c26;
+    border-color: #e34c26;
+}
+
+.skill-css:hover {
+    background-color: #254de4;
+    border-color: #264de4;
+}
+
+.skill-js:hover {
+    background-color: #f0db4f;
+    border-color: #f0db4f;
+    color: #1a1917;
+}
+
+.skill-python:hover {
+    background-color: #3572a5;
+    border-color: #3572a5;
 }
