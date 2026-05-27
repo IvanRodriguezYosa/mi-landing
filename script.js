@@ -30,3 +30,24 @@ const form = document.querySelector("form")
       form.innerHTML = "<p style='color: red;>Hubo un error, intenta de nuevo.</p>"
     }
   })
+
+const themeToggle = document.querySelector("#theme-toggle")
+const html = document.documentElement
+
+// Cargar preferencia guardada
+if (localStorage.getItem("theme") === "dark") {
+  html.setAttribute("data-theme", "dark")
+  themeToggle.textContent = "☀️"
+}
+
+themeToggle.addEventListener("click", function() {
+  if (html.getAttribute("data-theme") === "dark") {
+    html.removeAttribute("data-theme")
+    themeToggle.textContent = "🌙"
+    localStorage.setItem("theme", "light")
+  } else {
+    html.setAttribute("data-theme", "dark")
+    themeToggle.textContent = "☀️"
+    localStorage.setItem("theme", "dark")
+  }
+})
