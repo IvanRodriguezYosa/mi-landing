@@ -282,6 +282,35 @@ h1, h2, h3, .logo {
     border-color: var(--accent);
 }
 
+.project-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  color: var(--ink-muted);
+}
+
+.proyecto-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.proyecto-card a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     #sobre-mi {
         padding: 5rem 1.5rem 2rem;
