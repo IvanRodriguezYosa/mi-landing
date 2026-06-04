@@ -281,3 +281,27 @@ h1, h2, h3, .logo {
 #theme-toggle:hover {
     border-color: var(--accent);
 }
+
+@media (max-width: 768px) {
+    #sobre-mi {
+        padding: 5rem 1.5rem 2rem;
+    }
+    #sobre-mi h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 3rem 1.5rem;
+    }
+
+    nav {
+        padding: 1rem 1.5rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+    .form-row {
+    grid-template-columns: 1fr;
+  }
+}
